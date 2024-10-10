@@ -994,6 +994,15 @@ video {
   color: rgb(204 64 12 / var(--tw-text-opacity));
 }
 
+.text-\[\#\#645D5D\] {
+  color: ##645D5D;
+}
+
+.text-\[\#645D5D\] {
+  --tw-text-opacity: 1;
+  color: rgb(100 93 93 / var(--tw-text-opacity));
+}
+
 .placeholder-\[\#98A2B3\]::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(152 162 179 / var(--tw-placeholder-opacity));
