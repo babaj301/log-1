@@ -3,136 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log In 1</title>
+    <title>Login Final</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div class="flex flex-col justify-center mb-24">
-      <nav class="flex flex-row justify-between items-center p-8 mb-12 h-6">
-        <img src="./assets/rayna.svg" alt="" />
+    <div class="grid grid-cols-2">
+      <div
+        class="bg-cover bg-center h-[900px] lg:h-screen flex flex-col justify-between"
+        style="background-image: url('./assets/background.svg')"
+      >
+        <img class="h-7 w-36 m-12" src="./assets/Logo.svg" alt="" />
+        <div class="flex justify-center items-center">
+          <div
+            class="gap-6 m-8 w-[354px] h-[354px] bg-[#3E3838] flex flex-col justify-center items-center text-center rounded-3xl"
+          >
+            <img src="./assets/Message.svg" alt="" />
+            <p class="font-normal text-base w-72 text-[#FFFFFFE5]">
+              Rayna has completely transformed the way our team approaches
+              design. The sheer range of components and the seamless integration
+              of the design system into our workflow have been game-changers.
+            </p>
+            <div class="gap-2 flex flex-col">
+              <p class="font-semibold text-sm text-white">Ariana Grande</p>
+              <p class="text-[#A29999] font-normal text-xs">Visual Designer</p>
+            </div>
+            <img src="./assets/Dots.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <section class="flex flex-col justify-center items-center">
         <div
-          class="w-24 h-9 flex gap-2 px-2 py-3 justify-center items-center border border-[#E4E7EC] rounded-md"
+          class="m-auto flex text-left flex-col gap-6 lg:w-[442px] h-[512px]"
         >
-          <img src="./assets/flag.svg" alt="" />
-          <select
-            class="appearance-none text-sm font-semibold"
-            name="language"
-            id="lang"
-          >
-            <option value="english">ENG</option>
-            <option value="spanish">ESP</option>
-          </select>
-          <img src="./assets/button-icon.svg" alt="" />
-        </div>
-      </nav>
-
-      <section class="m-auto flex flex-col gap-6 lg:w-[400px] h-[670px]">
-        <div class="text-center gap-2">
-          <p class="font-semibold text-[#101928] text-2xl">Log In</p>
-          <p class="text-base font-normal text-[#667185]">
-            Enter your credentials to access your account
-          </p>
-        </div>
-
-        <form class="">
-          <div>
-            <label class="font-medium text-sm text-[#101928]" for="email"
-              >EMAIL ADDRESS</label
-            >
-            <div
-              class="w-full mt-1 mb-6 flex items-center relative placeholder-[#98A2B3]"
-            >
-              <input
-                class="w-full p-4 rounded-lg border border-[#D0D5DD] hover:border-[#FA9874] appearance-none outline-none shadow-md"
-                type="email"
-                placeholder="Enter email"
-              />
-              <img class="absolute right-6" src="./assets/message.svg" alt="" />
-            </div>
+          <div class="mb-3">
+            <p class="font-bold mb-2 text-[#101928] text-4xl">
+              Login with your email
+            </p>
+            <p class="text-sm font-normal text-[#667185]">
+              Enter the email you used to purchase the access pass 🔐
+            </p>
           </div>
 
-          <div class="gap-2">
-            <label class="font-medium text-sm text-[#101928]" for="email"
-              >PASSWORD</label
-            >
-            <div
-              class="w-full mt-1 mb-6 flex items-center relative placeholder-input-grey"
-            >
-              <input
-                class="w-full p-4 rounded-lg border border-[#D0D5DD] hover:border-[#FA9874] appearance-none outline-none shadow-md"
-                type="password"
-                placeholder="Enter Password"
-              />
-              <img class="absolute right-6" src="./assets/eye.svg" alt="" />
+          <form class="text-left">
+            <div>
+              <div
+                class="w-full mt-1 mb-6 flex items-center relative placeholder-[#98A2B3]"
+              >
+                <img class="absolute left-2" src="./assets/email.svg" alt="" />
+                <input
+                  class="w-full p-4 indent-4 rounded-lg border border-[#D0D5DD] hover:border-[#FA9874] appearance-none outline-none shadow-md"
+                  type="email"
+                  placeholder="Enter email"
+                />
+              </div>
             </div>
+            <button
+              class="w-full font-semibold text-base text-white py-4 px-6 rounded-lg mb-4 bg-[#EB5017]"
+              type="submit"
+            >
+              Login
+            </button>
+          </form>
+
+          <div class="flex gap-2 items-center justify-center w-full mb-4">
+            <hr class="flex-grow" />
+            <p class="text-input-grey">OR</p>
+            <hr class="flex-grow" />
+          </div>
+          <div class="">
+            <button
+              class="w-full flex items-center justify-center gap-4 py-4 px-6 rounded-lg mb-3 border border-[#D0D5DD] font-semibold text-[#344054] text-base"
+              type="submit"
+            >
+              <img src="./assets/icons8-google.svg" alt="" />
+
+              Continue with Google
+            </button>
+
+            <button
+              class="w-full flex items-center justify-center gap-4 py-4 px-6 rounded-lg border border-[#D0D5DD] font-semibold text-[#344054] text-base"
+              type="submit"
+            >
+              <img src="./assets/icons8-twitter.svg" alt="" />
+
+              Continue with Twitter
+            </button>
           </div>
 
-          <div class="flex justify-between mt-6 mb-8">
-            <div class="gap-2 h-5 flex">
-              <input
-                type="checkbox"
-                name="remember"
-                id="remember"
-                class="appearance-none h-5 w-5 rounded-md checked:bg-[#CC400C] border border-[#D0D5DD]"
-              />
-
-              <p class="font-medium text-sm text-[#101928]">
-                Remember me for 30 days
-              </p>
-            </div>
-
-            <a
-              class="text-sm flex items-center justify-center font-semibold text-[#CC400C]"
+          <div class="flex gap-1 text-left">
+            <p class="text-sm font-normal text-input-grey">Are you new here?</p>
+            <a class="text-sm font-medium text-[#CC400C]" href="#">
+              Create Account</a
             >
-              Forgot Password?
-            </a>
           </div>
-
-          <button
-            class="w-full font-semibold text-base text-white py-4 px-6 rounded-lg mb-4 bg-[#EB5017]"
-            type="submit"
-          >
-            Log into Account
-          </button>
-        </form>
-
-        <div class="flex gap-2 items-center justify-center w-full mb-4">
-          <hr class="flex-grow" />
-          <p class="text-input-grey">OR</p>
-          <hr class="flex-grow" />
-        </div>
-        <div class="gap-6">
-          <button
-            class="w-full flex items-center justify-center gap-4 py-4 px-6 rounded-lg mb-6 border border-[#D0D5DD] font-semibold text-[#344054] text-base"
-            type="submit"
-          >
-            <img src="./assets/icons8-google.svg" alt="" />
-
-            Continue with Google
-          </button>
-
-          <button
-            class="w-full flex items-center justify-center gap-4 py-4 px-6 rounded-lg border border-[#D0D5DD] font-semibold text-[#344054] text-base"
-            type="submit"
-          >
-            <img src="./assets/icons8-twitter.svg" alt="" />
-
-            Continue with Twitter
-          </button>
-        </div>
-
-        <div class="flex gap-1 justify-center items-center">
-          <p class="text-sm font-normal text-input-grey">Are you new here?</p>
-          <a class="text-sm font-medium text-[#CC400C]" href="#">
-            Create Account</a
-          >
         </div>
       </section>
     </div>
